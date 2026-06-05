@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>College AI Assistant</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="chat-container">
+
+    <div class="header">
+        <div class="logo">🎓</div>
+
+        <div>
+            <h1>College AI Assistant</h1>
+            <p>Ask anything about the college website</p>
+        </div>
+    </div>
+
+    <div id="chat-box"></div>
+
+    <div class="input-area">
+
+        <input
+                type="text"
+                id="message"
+                placeholder="Ask a question..."
+        >
+
+        <button onclick="sendMessage()">
+            Send
+        </button>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
